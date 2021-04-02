@@ -1,0 +1,72 @@
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #E5E5E5;
+}
+
+.sidebar {
+    /* Rectangle 65 */
+position: absolute;
+width: 288px;
+height: 100%;
+left: 0px;
+top: 0px;
+
+background: #374988;
+}
+
+ul {
+    list-style: none;
+    margin-top: 3rem;
+    font-family: 'Lato', sans-serif;
+}
+
+li {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FAFBFC;
+}
+
+a {
+text-decoration: none;
+color: #FAFBFC;
+Font-size: 18px;
+Line-height: 24px;
+Line-height: 132%;
+Letter-spacing: 2%;
+Fill: Solid;
+text-align: Left;
+Vertical-align: Top;
+}
+
+.mainbar {
+    margin-left: 20rem;
+    height: 100%;
+}
+
+.name {
+width: 14px;
+height: 42px;
+Font-family: Lato;
+Font-style: Bold;
+Font-size: 32px;
+Fill: Solid;
+color: #FDFEFF;
+text-align: center;
+margin-left: 5px;
+margin-top: 10px;
+}
+
+.wallet {
+Font-style: Bold;
+Font-size: 24px;
+Line-height: 29px;
+Line-height: 100%;
+text-align: Left;
+Vertical-align: Top;
+color: #374988;
+}
+
