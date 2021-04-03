@@ -2,6 +2,7 @@
 
 body{
     font-family: 'Lato', sans-serif;
+    background-color: #E5E5E5;
 }
 /* FEATURES */
 
@@ -23,30 +24,7 @@ color: #374988;
     align-items: center;
 }
 
- /* Let your money work for you without stress */
-.feature-content {
-font-family: 'Lato', sans-serif;
-font-style: normal;
-font-weight: 800;
-font-size: 32px;
-line-height: 132.1%;
-/* or 42px */
-text-align: center;
-letter-spacing: 0.02em;
-
-color: #353841;
-}
-
-h3 {
-    font-weight: bold;
-    font-size: 24px;
-    color: #353841;
-}
-
-p {
-    font-size: 18px;
-    color: #585A61;
-}
+/* header styles*/
 
 @media (max-width: 576px) {
 .feature-list p {
