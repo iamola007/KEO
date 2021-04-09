@@ -3,6 +3,7 @@
 body{
     font-family: 'Lato', sans-serif;
     background-color: #E5E5E5;
+    width: 100%;
 }
 /* FEATURES */
 
@@ -17,6 +18,10 @@ text-align: center;
 letter-spacing: 0.02em;
 
 color: #374988;
+}
+
+.nav-link {
+  margin-right: 2rem;
 }
 
 .feature-notes {
@@ -34,37 +39,47 @@ color: #374988;
 .feature-list h3 {
     text-align: center;
 }
-#navbarNav {
-    text-align: center;
-    background-color: #e9e9e9;
-}
 
-.appIcons{
-    align-items: center;
-    justify-content: center;
-    margin-left: 3rem;
-}
-
-#appleStore {
-    margin-bottom: 2rem;
-    margin-left: 2rem;
-}
-#playStore {
-    margin-left: -1rem;
-}
 p {
     text-align: center;
 }
 h1 {
     text-align: center;
 }
-#phoneImage {
-    display: block;
+.feature-items {
+  margin-left: -4rem;
+}
+#feature-img{
+  margin-top: 4rem;
+}
+#footerSection {
+  text-align: center;
+  align-items: center;
+}
+#download-app {
+  margin-left: 1.5rem;
+}
+#getInTouch {
+  text-align: center;
+  align-items: center;
+}
+#icons {
+  align-items: center;
+  margin-left: 5px;
+}
+#bottomSection {
+  align-items: center;
+  justify-content: center;
+  margin-left: 0%;
+  margin-top: -20rem;
+}
+#appleStore {
+  margin-left: 0rem;
+  align-self: flex-start;
+}
 }
 
-}
-
-@media (max-width: 770px) {
+@media (max-width: 768px) {
    .feature-list p {
         text-align: center;
     }
@@ -72,7 +87,6 @@ h1 {
     .feature-list h3 {
         text-align: center;
     }
-
 #navbarNav {
     font-size: large;
     color: #374988; 
@@ -90,376 +104,49 @@ h1 {
 #playStore {
     margin-left: -1rem;
 }
+.feature-list p {
+  text-align: center;
 }
 
-/* koliko styles */
-section.FAQs {
-    height: 87vh;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .FAQs h3 {
-    font-weight: 700;
-    height: 10%;
-  }
-  .FAQs > a {
-    color: var(--primary-color);
-  }
-  .orange {
-    color: #e50e0e;
-  }
-  div.question-cont {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    height: 70vh;
-  }
-  div.question-cont .set {
-    width: 45%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-  .set .quest {
-    width: 100%;
-    background: white;
-    height: 12%;
-    margin-bottom: 1%;
-    box-shadow: 0px 2px 6px #2e3c44;
-    border-radius: 5px;
-    font-size: 14px;
-    padding: 1%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  
-  .set .quest p {
-    font-weight: 600;
-    width: 90%;
-    font-size: 16px;
-  }
-  .set .quest a {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(83, 81, 81);
-  }
-  .set .quest a img {
-    width: 100%;
-  }
-  .set .quest-info {
-    display: flex;
-    flex-direction: column;
-    height: 20%;
-    width: 100%;
-    /* overflow-y: hidden; */
-    padding: 1%;
-    justify-content: center;
-    align-items: center;
-  }
-  .set .quest-info > div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 95%;
-  }
-  .set .quest-info > div p {
-    width: 80%;
-  }
-  .set .quest-info .info p {
-    font-size: 14px;
-    font-weight: 400;
-    width: 80%;
-  }
-  .Middle-line {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 10px;
-  }
-  .Middle-line .line {
-    width: 5px;
-    height: 100%;
-  }
-  
-  /*-- Footer --*/
-  
-  .footer-section {
-    position: relative;
-    width: 100%;
-    height: 1200px;
-    display: flex;
-    flex-direction: column;
-  }
-  .footer-section .blue-bg {
-    width: 100%;
-    height: 40%;
-    background: #473788;
-    border-top-left-radius: 15vw;
-    border-top-right-radius: 15vw;
-    display: flex;
-    flex-direction: column;
-  }
-  .footer-section .bg-2 {
-    width: 100%;
-    height: 50%;
-    background: #473788;
-    z-index: 400;
-    position: relative;
-  }
-  .footer-section .phones {
-    position: relative;
-    padding: 0;
-    width: 65%;
-    height: 25vh;
-    display: flex;
-    flex-direction: row;
-    background-color: #fff;
-    margin: 0 auto;
-    z-index: 100;
-  }
-  .footer-section .phones .phone-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-  .footer-section .phones .phone-img-center {
-    left: -3%;
-    top: -10%;
-    z-index: 200;
-  }
-  .footer-section .phones .phone-img-right {
-    left: 18%;
-    top: 30%;
-  }
-  .footer-section .phones .phone-img-left {
-    left: -28%;
-    top: 30%;
-  }
-  
-  .blue-bg .rings,
-  .bg-2 .rings {
-    width: 100%;
-    height: 100%;
-    background: url(/assets/Mask\ Group.png) no-repeat;
-    background-size: cover;
-    background-position: left center;
-  }
-  .bg-2 .rings {
-    transform: rotate(180deg);
-  }
-  
-  .download {
-    position: absolute;
-    top: 10%;
-    left: 30%;
-    color: #fff;
-    width: 40%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-  }
-  .download h3.text {
-    font-weight: 700;
-    width: 70%;
-    font-size: 40px;
-  }
-  .download span {
-    font-weight: 400;
-    font-size: 16px;
-  }
-  .download .dash-box {
-    padding: 10px;
-    border: 2px dashed #fff;
-    font-weight: 700;
-    font-size: 24px;
-    width: 80%;
-  }
-  .footer {
-    width: 100%;
-    padding: 3vw 4vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .footer .footer-links {
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .footer .footer-links a {
-    font-size: 18px;
-    color: var(--primary-color);
-    font-weight: 600;
-    text-decoration: none;
-  }
-  .footer .social-links {
-    width: 15%;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .footer .social-links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #374988;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-  }
-  .fa-instagram,
-  .fa-twitter,
-  .fa-facebook-f {
-    color: var(--primary-color);
-  }
-  
-  @media only screen and (max-width: 1025px) {
-    .set .quest-info .info {
-      display: none;
-    }
-    .navbar-nav.navbar-center {
-      margin-left: 20%;
-    }
-    .footer-section {
-      height: 1100px;
-    }
-    .footer-section .phones {
-      height: 30vh;
-      margin-top: 40vh;
-    }
-    .download {
-      width: 55%;
-      left: 21%;
-      height: 90%;
-    }
-    .download h3.text {
-      font-size: 35px;
-      width: 60%;
-    }
-    .download .dash-box {
-      width: 70%;
-    }
-  }
-  @media only screen and (max-width: 950px) {
-    .navbar {
-      padding: 0.5rem 3%;
-    }
-    .navbar-nav.navbar-center {
-      margin-left: 10%;
-    }
-  }
-  
-  @media only screen and (max-width: 770px) {
-    .Middle-line {
-      display: none;
-    }
-    .FAQs h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-    div.question-cont {
-      flex-direction: column;
-    }
-    div.question-cont .set {
-      width: 100%;
-    }
-    .set .quest {
-      height: 30%;
-      margin-bottom: 5%;
-    }
-    .set .quest-info {
-      height: 30%;
-    }
-    .footer-section {
-      height: 1300px;
-    }
-    .footer-section .phones {
-      height: 25vh;
-      margin-top: 100vh;
-    }
-  
-    .footer {
-      height: 300px;
-      align-items: center;
-      padding: 0;
-    }
-    .footer .footer-links {
-      flex-direction: column;
-      justify-content: end;
-      align-items: center;
-    }
-    .footer-links .social-links {
-      justify-content: space-between;
-    }
-    .download {
-      width: 80%;
-      left: 10%;
-    }
-    .download h3.text {
-      font-size: 30px;
-    }
-    .download .dash-box {
-      width: 60%;
-      font-size: 18px;
-      margin-top: 10px;
-      padding: 10px;
-    }
-  }
-  @media only screen and (max-width: 430px) {
-    .btn.small button {
-      display: none;
-    }
-    .nav-item .btn.lg {
-      display: unset;
-    }
-    .navbar-nav.navbar-center {
-      margin-left: unset;
-    }
-    .footer-section {
-      height: 1300px;
-    }
-    .footer-section .phones {
-      display: none;
-    }
-    .footer {
-      height: 500px;
-      flex-direction: column;
-    }
-    .footer .footer-links {
-      width: 100%;
-    }
-    .social-links a {
-      padding: 20px;
-    }
-    .blue-bg.bg-1,
-    .phones,
-    .phone-img {
-      display: none;
-    }
-    .bg-2 {
-      margin-top: 70vh;
-    }
-    .download {
-      width: 100%;
-      left: unset;
-    }
-  }
+.feature-list h3 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+}
+.feature-items {
+margin-left: -4rem;
+}
+#feature-img{
+margin-top: 4rem;
+}
+#footerSection {
+text-align: center;
+align-items: center;
+}
+#download-app {
+margin-left: 1.5rem;
+}
+#getInTouch {
+text-align: center;
+align-items: center;
+}
+#icons {
+align-items: center;
+margin-left: 5px;
+}
+#bottomSection {
+align-items: center;
+justify-content: center;
+margin-left: 0%;
+margin-top: 25rem;
+}
+
+}
+@media (min-width: 1200px) {
+ 
+}
